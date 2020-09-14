@@ -27,7 +27,7 @@ int guess_solve(Sudoku& sudoku)
                    return 0;
                }
             }
-            catch(...)            // If our guess is wrong, simply move on
+            catch(int x)            // If our guess is wrong, simply move on
                                   //  and try the next guess.
             {
             }
