@@ -1,5 +1,6 @@
 int guess_solve(Sudoku& sudoku)
 {
+    int x = -1;
     sudoku.simple_solve();
 
     if(sudoku.solved())     // If simple solve works exit function.
