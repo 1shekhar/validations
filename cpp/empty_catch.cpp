@@ -1,6 +1,6 @@
 int guess_solve(Sudoku& sudoku)
 {
-    int x = -1;
+    
     sudoku.simple_solve();
 
     if(sudoku.solved())     // If simple solve works exit function.
@@ -12,6 +12,7 @@ int guess_solve(Sudoku& sudoku)
        {
            Sudoku s = sudoku;
            s.guess(b,i);
+           int x = -1;
            try{
                s.simple_solve();  // Simple solve throws if any box ends up 
                                   //  with zero possibilities for its entry.
